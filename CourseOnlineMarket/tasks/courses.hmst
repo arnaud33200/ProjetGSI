@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hamsters version="3">
+    <colors applicationcolor="-1835139" declarativecolor="-1854465" devicecolor="-8879105" objectcolor="-14336" physicalobjectcolor="-14336" situationalcolor="-3290107" strategiccolor="-4136705"/>
+    <nodes>
+        <task copy="false" critical="0" folded="false" help="" id="1" iterative="false" maxexectime="0" minexectime="0" name="faire ses courses" nb_iteration="0" optional="false" type="abstract" x="320" y="70">
+            <operator id="-1" type="enable" x="375" y="177">
+                <task copy="false" critical="0" folded="false" help="" id="2" iterative="false" maxexectime="0" minexectime="0" name="Choix livraison" nb_iteration="0" optional="false" type="abstract" x="116" y="267">
+                    <operator id="-1" type="choice" x="143" y="379">
+                        <task copy="false" critical="0" folded="false" help="" id="8" iterative="false" maxexectime="0" minexectime="0" name="Livraison à domicile" nb_iteration="0" optional="false" type="abstract" x="15" y="428"/>
+                        <task copy="false" critical="0" folded="false" help="" id="9" iterative="false" maxexectime="0" minexectime="0" name="Retrait en magasin" nb_iteration="0" optional="false" type="abstract" x="169" y="428"/>
+                    </operator>
+                </task>
+                <task copy="false" critical="0" folded="false" help="" id="3" iterative="false" maxexectime="0" minexectime="0" name="selection des articles" nb_iteration="0" optional="false" type="abstract" x="252" y="267"/>
+                <task copy="false" critical="0" folded="false" help="" id="4" iterative="false" maxexectime="0" minexectime="0" name="Verfication du panier" nb_iteration="0" optional="false" type="abstract" x="432" y="267"/>
+                <task copy="false" critical="0" folded="false" help="" id="5" iterative="false" maxexectime="0" minexectime="0" name="Payement" nb_iteration="0" optional="false" type="abstract" x="605" y="267"/>
+            </operator>
+        </task>
+    </nodes>
+    <datas/>
+    <errors/>
+    <connectsnodes/>
+    <parameters/>
+</hamsters>
