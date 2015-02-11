@@ -8,14 +8,15 @@
                     <operator id="-1" type="enable" x="78" y="424">
                         <task copy="false" critical="0" folded="false" help="" id="8" iterative="false" maxexectime="0" minexectime="0" name="Entrer ville magasin" nb_iteration="0" optional="false" type="abstract" x="-168" y="484">
                             <operator id="-1" type="choice" x="-112" y="564">
-                                <task copy="false" critical="0" folded="false" help="" id="21" iterative="false" maxexectime="0" minexectime="0" name="entrer code postal" nb_iteration="0" optional="false" type="abstract" x="-247" y="621"/>
-                                <task copy="false" critical="0" folded="false" help="" id="22" iterative="false" maxexectime="0" minexectime="0" name="Entrer nom ville" nb_iteration="0" optional="false" type="abstract" x="-83" y="621"/>
+                                <task copy="false" critical="0" folded="false" help="" id="21" iterative="false" maxexectime="0" minexectime="0" name="entrer code postal" nb_iteration="0" optional="false" type="abstract" x="-273" y="645"/>
+                                <task copy="false" critical="0" folded="false" help="" id="22" iterative="false" maxexectime="0" minexectime="0" name="Entrer nom ville" nb_iteration="0" optional="false" type="abstract" x="-112" y="645"/>
                             </operator>
                         </task>
                         <task copy="false" critical="0" folded="false" help="" id="9" iterative="false" maxexectime="0" minexectime="0" name="Selectionner magasin" nb_iteration="0" optional="false" type="abstract" x="118" y="484">
                             <operator id="-1" type="choice" x="170" y="564">
                                 <task copy="false" critical="0" folded="false" help="" id="24" iterative="false" maxexectime="0" minexectime="0" name="sur liste" nb_iteration="0" optional="false" type="abstract" x="53" y="621"/>
                                 <task copy="false" critical="0" folded="false" help="" id="23" iterative="false" maxexectime="0" minexectime="0" name="sur carte" nb_iteration="0" optional="false" type="abstract" x="190" y="621"/>
+                                <task copy="false" critical="0" folded="false" help="" id="28" iterative="false" maxexectime="0" minexectime="0" name="Me localiser" nb_iteration="0" optional="false" type="abstract" x="336" y="621"/>
                             </operator>
                         </task>
                     </operator>
