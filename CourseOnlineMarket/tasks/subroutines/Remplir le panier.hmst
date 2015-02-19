@@ -2,15 +2,16 @@
 <hamsters version="3">
     <colors applicationcolor="-1835139" declarativecolor="-1854465" devicecolor="-8879105" objectcolor="-14336" physicalobjectcolor="-14336" situationalcolor="-3290107" strategiccolor="-4136705"/>
     <nodes>
-        <task copy="false" critical="0" folded="false" help="" id="1" iterative="false" maxexectime="0" minexectime="0" name="Remplir le panier" nb_iteration="0" optional="false" type="subroutine" x="223" y="29">
+        <task copy="false" critical="0" folded="false" help="" id="1" iterative="true" maxexectime="0" minexectime="0" name="Remplir le panier" nb_iteration="0" optional="false" type="subroutine" x="231" y="30">
             <operator id="-1" type="enable" x="282" y="135">
-                <task copy="false" critical="0" folded="false" help="" id="10" iterative="false" maxexectime="0" minexectime="0" name="afficher une liste de produit" nb_iteration="0" optional="false" type="abstract" x="42" y="220">
+                <task copy="false" critical="0" folded="false" help="" id="10" iterative="false" maxexectime="0" minexectime="0" name="afficher une liste de produit" nb_iteration="0" optional="false" type="abstract" x="33" y="220">
                     <operator id="-1" type="choice" x="115" y="301">
-                        <task copy="false" critical="0" folded="false" help="" id="13" iterative="false" maxexectime="0" minexectime="0" name="ouvrir un rayon" nb_iteration="0" optional="false" type="abstract" x="-10" y="361"/>
-                        <task copy="false" critical="0" folded="false" help="" id="14" iterative="false" maxexectime="0" minexectime="0" name="Faire une recherche" nb_iteration="0" optional="false" type="abstract" x="126" y="361"/>
+                        <task copy="false" critical="0" folded="false" help="" id="13" iterative="true" maxexectime="0" minexectime="0" name="ouvrir un rayon" nb_iteration="0" optional="false" type="abstract" x="56" y="361"/>
+                        <task copy="false" critical="0" folded="false" help="" id="14" iterative="false" maxexectime="0" minexectime="0" name="Faire une recherche" nb_iteration="0" optional="false" type="abstract" x="192" y="361"/>
+                        <task copy="false" critical="0" folded="false" help="" id="15" iterative="false" maxexectime="0" minexectime="0" name="Page promotion" nb_iteration="0" optional="false" type="abstract" x="-91" y="361"/>
                     </operator>
                 </task>
-                <task copy="false" critical="0" folded="false" help="" id="11" iterative="false" maxexectime="0" minexectime="0" name="filtrer" nb_iteration="0" optional="false" type="abstract" x="236" y="220"/>
+                <task copy="false" critical="0" folded="false" help="" id="11" iterative="false" maxexectime="0" minexectime="0" name="filtrer" nb_iteration="0" optional="true" type="abstract" x="236" y="220"/>
                 <task copy="false" critical="0" folded="false" help="" id="12" iterative="false" maxexectime="0" minexectime="0" name="Ajouter l'article au panier" nb_iteration="1" optional="false" type="abstract" x="376" y="220"/>
             </operator>
         </task>

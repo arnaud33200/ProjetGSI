@@ -2,10 +2,21 @@
 <hamsters version="3">
     <colors applicationcolor="-1835139" declarativecolor="-1854465" devicecolor="-8879105" objectcolor="-14336" physicalobjectcolor="-14336" situationalcolor="-3290107" strategiccolor="-4136705"/>
     <nodes>
-        <task copy="false" critical="0" folded="false" help="" id="1" iterative="false" maxexectime="0" minexectime="0" name="Verifier le panier" nb_iteration="0" optional="false" type="subroutine" x="287" y="68">
-            <operator id="-1" type="enable" x="341" y="168">
-                <task copy="false" critical="0" folded="false" help="" id="15" iterative="false" maxexectime="0" minexectime="0" name="afficher liste panier" nb_iteration="0" optional="false" type="abstract" x="231" y="219"/>
-                <task copy="false" critical="0" folded="false" help="" id="16" iterative="false" maxexectime="0" minexectime="0" name="Mettre à jours le panier" nb_iteration="0" optional="true" type="abstract" x="381" y="219"/>
+        <task copy="false" critical="0" folded="false" help="" id="1" iterative="false" maxexectime="0" minexectime="0" name="Verifier le panier" nb_iteration="0" optional="false" type="subroutine" x="240" y="23">
+            <operator id="-1" type="choice" x="290" y="126">
+                <task copy="false" critical="0" folded="false" help="" id="19" iterative="false" maxexectime="0" minexectime="0" name="Volet Panier" nb_iteration="0" optional="false" type="abstract" x="31" y="201">
+                    <operator id="-1" type="enable" x="80" y="292">
+                        <task copy="false" critical="0" folded="false" help="" id="20" iterative="false" maxexectime="0" minexectime="0" name="Ouvrir le volet" nb_iteration="0" optional="true" type="abstract" x="-32" y="343"/>
+                        <task copy="false" critical="0" folded="false" help="" id="21" iterative="true" maxexectime="0" minexectime="0" name="Retirer des produits" nb_iteration="0" optional="true" type="abstract" x="104" y="343"/>
+                    </operator>
+                </task>
+                <task copy="false" critical="0" folded="false" help="" id="15" iterative="false" maxexectime="0" minexectime="0" name="page Panier" nb_iteration="0" optional="false" type="abstract" x="463" y="201">
+                    <operator id="-1" type="enable" x="512" y="292">
+                        <task copy="false" critical="0" folded="false" help="" id="18" iterative="false" maxexectime="0" minexectime="0" name="Ouvrir la page panier" nb_iteration="0" optional="false" type="abstract" x="303" y="343"/>
+                        <task copy="false" critical="0" folded="false" help="" id="17" iterative="false" maxexectime="0" minexectime="0" name="Trier le panier" nb_iteration="0" optional="true" type="abstract" x="463" y="343"/>
+                        <task copy="false" critical="0" folded="false" help="" id="16" iterative="true" maxexectime="0" minexectime="0" name="Retirer des produits" nb_iteration="0" optional="true" type="abstract" x="599" y="343"/>
+                    </operator>
+                </task>
             </operator>
         </task>
     </nodes>

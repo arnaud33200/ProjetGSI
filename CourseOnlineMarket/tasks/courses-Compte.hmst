@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hamsters version="3">
+    <colors applicationcolor="-1835139" declarativecolor="-1854465" devicecolor="-8879105" objectcolor="-14336" physicalobjectcolor="-14336" situationalcolor="-3290107" strategiccolor="-4136705"/>
+    <nodes>
+        <task copy="false" critical="0" folded="false" help="" id="1" iterative="false" maxexectime="0" minexectime="0" name="Course drive avec compte" nb_iteration="0" optional="false" type="abstract" x="501" y="23">
+            <operator id="-1" type="enable" x="583" y="130">
+                <task copy="false" critical="0" folded="false" help="" id="2" iterative="false" maxexectime="0" minexectime="0" name="Connection au compte" nb_iteration="0" optional="false" type="abstract" x="33" y="238"/>
+                <task copy="false" critical="0" folded="false" help="" id="3" iterative="false" maxexectime="0" minexectime="0" name="importer un panier passé" nb_iteration="0" optional="false" type="abstract" x="509" y="298">
+                    <operator id="-1" type="enable" x="583" y="407">
+                        <task copy="false" critical="0" folded="false" help="" id="10" iterative="false" maxexectime="0" minexectime="0" name="Ouvrir page Compte" nb_iteration="0" optional="false" type="abstract" x="364" y="470"/>
+                        <task copy="false" critical="0" folded="false" help="" id="11" iterative="false" maxexectime="0" minexectime="0" name="Ouvrir page historique panier" nb_iteration="0" optional="false" type="abstract" x="506" y="470"/>
+                        <task copy="false" critical="0" folded="false" help="" id="12" iterative="true" maxexectime="0" minexectime="0" name="Parcourir paniers passés" nb_iteration="0" optional="false" type="abstract" x="698" y="470">
+                            <operator id="-1" type="enable" x="767" y="566">
+                                <task copy="false" critical="0" folded="false" help="" id="14" iterative="false" maxexectime="0" minexectime="0" name="Selectionner un panier" nb_iteration="0" optional="false" type="abstract" x="541" y="629"/>
+                                <task copy="false" critical="0" folded="false" help="" id="15" iterative="false" maxexectime="0" minexectime="0" name="Voir les produits" nb_iteration="0" optional="false" type="abstract" x="711" y="629"/>
+                                <task copy="false" critical="0" folded="false" help="" id="16" iterative="false" maxexectime="0" minexectime="0" name="Modifier le panier actuel en cours" nb_iteration="0" optional="false" type="abstract" x="847" y="629">
+                                    <operator id="-1" type="choice" x="936" y="715">
+                                        <task copy="false" critical="0" folded="false" help="" id="17" iterative="false" maxexectime="0" minexectime="0" name="Remplacer le panier en cours" nb_iteration="0" optional="false" type="abstract" x="767" y="752"/>
+                                        <task copy="false" critical="0" folded="false" help="" id="13" iterative="false" maxexectime="0" minexectime="0" name="Ajouter au panier en cours" nb_iteration="0" optional="false" type="abstract" x="963" y="752"/>
+                                    </operator>
+                                </task>
+                            </operator>
+                        </task>
+                    </operator>
+                </task>
+                <task copy="false" critical="0" folded="false" help="" id="9" iterative="false" maxexectime="0" minexectime="0" name="Verifier le panier" nb_iteration="0" optional="false" subtree="Verifier le panier" type="subroutine" x="711" y="242"/>
+                <task copy="false" critical="0" folded="false" help="" id="6" iterative="false" maxexectime="0" minexectime="0" name="Choix du magasin" nb_iteration="0" optional="false" type="abstract" x="244" y="242">
+                    <operator id="-1" type="enable" x="300" y="332">
+                        <task copy="false" critical="0" folded="false" help="" id="7" iterative="false" maxexectime="0" minexectime="0" name="Consulter derniers magasin selectionné" nb_iteration="0" optional="false" type="abstract" x="85" y="371"/>
+                        <task copy="false" critical="0" folded="false" help="" id="8" iterative="false" maxexectime="0" minexectime="0" name="Valider un magasin" nb_iteration="0" optional="false" type="abstract" x="353" y="371"/>
+                    </operator>
+                </task>
+                <task copy="false" critical="0" folded="false" help="" id="19" iterative="false" maxexectime="0" minexectime="0" name="payer le panier" nb_iteration="0" optional="false" type="abstract" x="998" y="197">
+                    <operator id="-1" type="enable" x="1049" y="294">
+                        <task copy="false" critical="0" folded="false" help="" id="20" iterative="false" maxexectime="0" minexectime="0" name="Valider panier" nb_iteration="0" optional="false" type="abstract" x="780" y="367"/>
+                        <task copy="false" critical="0" folded="false" help="" id="22" iterative="false" maxexectime="0" minexectime="0" name="Choisir date retrait" nb_iteration="0" optional="false" type="abstract" x="916" y="367"/>
+                        <task copy="false" critical="0" folded="false" help="" id="21" iterative="false" maxexectime="0" minexectime="0" name="Choisir moyen payement" nb_iteration="0" optional="false" type="abstract" x="1063" y="367"/>
+                        <task copy="false" critical="0" folded="false" help="" id="18" iterative="false" maxexectime="0" minexectime="0" name="Valider payement" nb_iteration="0" optional="false" type="abstract" x="1246" y="367"/>
+                    </operator>
+                </task>
+            </operator>
+        </task>
+    </nodes>
+    <datas/>
+    <errors/>
+    <connectsnodes/>
+    <parameters/>
+</hamsters>
