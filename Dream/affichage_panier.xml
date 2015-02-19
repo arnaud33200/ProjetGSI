@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE diagram PUBLIC "QOC DTD"
+                         "Qoc.dtd">
+<diagram>
+    <sessions>
+        <session id="s1" date="2015/1/19/18/56/31">
+            <maker author="a1"/>
+        </session>
+    </sessions>
+    <nodes>
+        <node>
+            <question id="q1"/>
+            <question id="q2">
+                <itemQuestion
+                    label="Quand afficher le contenu du panier ?" session="s1"/>
+            </question>
+            <option id="o1"/>
+            <option id="o2"/>
+            <option id="o3">
+                <itemOption label="Toujours" session="s1"/>
+            </option>
+            <option id="o4">
+                <itemOption label="Jamais" session="s1"/>
+            </option>
+            <option id="o5">
+                <itemOption label="Quand l&apos;utilisateur le souhaite" session="s1"/>
+            </option>
+            <criteria id="c1"/>
+            <criteria id="c2"/>
+            <criteria id="c3">
+                <itemCriteria
+                    label="Temps pour augmenter la quantité d&apos;un produit"
+                    weight="1" session="s1"/>
+            </criteria>
+            <criteria id="c4">
+                <itemCriteria label="Temps pour supprimer un produit"
+                    weight="1" session="s1"/>
+            </criteria>
+            <criteria id="c5">
+                <itemCriteria
+                    label="Temps pour verifier un panier &lt;10 articles"
+                    weight="3" session="s1"/>
+            </criteria>
+            <criteria id="c6"/>
+            <criteria id="c7">
+                <itemCriteria label="Espace visualisation des produits"
+                    weight="1" session="s1"/>
+            </criteria>
+            <factor id="f1"/>
+            <factor id="f2"/>
+            <factor id="f3">
+                <itemFactor label="Reprise sur erreur" weight="2" session="s1"/>
+            </factor>
+            <factor id="f4">
+                <itemFactor
+                    label="Visualisation efficace des produits en rayons"
+                    additionalInfo="" weight="3" session="s1"/>
+            </factor>
+            <factor id="f5">
+                <itemFactor label="Rapidité constitution du panier"
+                    additionalInfo="" weight="1" session="s1"/>
+            </factor>
+            <factor id="f6">
+                <itemFactor label="Facilité modification du panier"
+                    weight="1" session="s1"/>
+            </factor>
+        </node>
+        <position id="p1" idref="q1"/>
+        <position id="p2" idref="o1"/>
+        <position id="p3" idref="o2"/>
+        <position id="p4" idref="c1"/>
+        <position id="p5" idref="f1"/>
+        <position id="p6" idref="f2"/>
+        <position id="p7" idref="c2"/>
+        <position id="p8" idref="q2">
+            <itemPosition posX="82" posY="319" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p9" idref="o3">
+            <itemPosition posX="309" posY="82" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p10" idref="o4">
+            <itemPosition posX="312" posY="384" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p11" idref="o5">
+            <itemPosition posX="307" posY="720" width="90" height="90"
+                session="s1" selected="true"/>
+        </position>
+        <position id="p12" idref="f3">
+            <itemPosition posX="1162" posY="639" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p13" idref="f4">
+            <itemPosition posX="1152" posY="144" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p14" idref="f5">
+            <itemPosition posX="1521" posY="402" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p15" idref="c3">
+            <itemPosition posX="752" posY="289" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p16" idref="c4">
+            <itemPosition posX="750" posY="437" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p17" idref="c5">
+            <itemPosition posX="757" posY="621" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p18" idref="c6"/>
+        <position id="p19" idref="c7">
+            <itemPosition posX="764" posY="117" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p20" idref="f6">
+            <itemPosition posX="1160" posY="359" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+    </nodes>
+    <links>
+        <link id="l1"/>
+        <link id="l2"/>
+        <link id="l3">
+            <itemLink from="p8" to="p9" value="0" session="s1"/>
+        </link>
+        <link id="l4">
+            <itemLink from="p8" to="p10" value="0" session="s1"/>
+        </link>
+        <link id="l5">
+            <itemLink from="p8" to="p11" value="0" session="s1"/>
+        </link>
+        <link id="l6">
+            <itemLink from="p9" to="p19" value="2" session="s1">
+                <blackBox posX="581" posY="144" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l7">
+            <itemLink from="p9" to="p15" value="5" session="s1">
+                <blackBox posX="583" posY="215" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l8">
+            <itemLink from="p9" to="p16" value="5" session="s1">
+                <blackBox posX="582" posY="304" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l9">
+            <itemLink from="p9" to="p17" value="5" session="s1">
+                <blackBox posX="578" posY="396" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l10"/>
+        <link id="l11">
+            <itemLink from="p10" to="p19" value="5" session="s1">
+                <blackBox posX="583" posY="288" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l12">
+            <itemLink from="p10" to="p15" value="2" session="s1">
+                <blackBox posX="577" posY="374" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l13">
+            <itemLink from="p10" to="p16" value="2" session="s1">
+                <blackBox posX="576" posY="448" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l14">
+            <itemLink from="p10" to="p17" value="2" session="s1">
+                <blackBox posX="579" posY="540" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l15"/>
+        <link id="l16">
+            <itemLink from="p19" to="p13" value="3" session="s1">
+                <blackBox posX="1003" posY="175" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l17">
+            <itemLink from="p15" to="p20" value="3" session="s1">
+                <blackBox posX="993" posY="399" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l18">
+            <itemLink from="p16" to="p20" value="3" session="s1">
+                <blackBox posX="992" posY="473" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l19"/>
+        <link id="l20">
+            <itemLink from="p15" to="p12" value="4" session="s1">
+                <blackBox posX="994" posY="531" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l21">
+            <itemLink from="p16" to="p12" value="4" session="s1">
+                <blackBox posX="993" posY="605" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l22">
+            <itemLink from="p17" to="p12" value="3" session="s1">
+                <blackBox posX="997" posY="697" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l23"/>
+        <link id="l24">
+            <itemLink from="p11" to="p19" value="3" session="s1">
+                <blackBox posX="580" posY="463" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l25">
+            <itemLink from="p11" to="p15" value="4" session="s1">
+                <blackBox posX="574" posY="549" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l26">
+            <itemLink from="p11" to="p16" value="4" session="s1">
+                <blackBox posX="573" posY="623" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l27"/>
+        <link id="l28">
+            <itemLink from="p11" to="p17" value="4" session="s1">
+                <blackBox posX="577" posY="715" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l29">
+            <itemLink from="p13" to="p14" value="6" session="s1"/>
+        </link>
+        <link id="l30">
+            <itemLink from="p20" to="p14" value="6" session="s1"/>
+        </link>
+        <link id="l31"/>
+        <link id="l32">
+            <itemLink from="p12" to="p14" value="6" session="s1"/>
+        </link>
+    </links>
+    <authors>
+        <author id="a1" name="vincent"/>
+    </authors>
+</diagram>
