@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE diagram PUBLIC "QOC DTD"
+                         "Qoc.dtd">
+<diagram>
+    <sessions>
+        <session id="s1" date="2015/1/20/15/50/29">
+            <maker author="a1"/>
+        </session>
+    </sessions>
+    <nodes>
+        <node>
+            <question id="q1">
+                <itemQuestion
+                    label="Comment supprimer un item dans la verification du panier ?" session="s1"/>
+            </question>
+            <option id="o1">
+                <itemOption label="Une seule etape" session="s1"/>
+            </option>
+            <option id="o2">
+                <itemOption label="Deux etapes" session="s1"/>
+            </option>
+            <criteria id="c1">
+                <itemCriteria label="Temps pour supprimer un item"
+                    weight="1" session="s1"/>
+            </criteria>
+            <criteria id="c2">
+                <itemCriteria
+                    label="Temps pour retrouver un item supprimé"
+                    weight="2" session="s1"/>
+            </criteria>
+            <criteria id="c3">
+                <itemCriteria
+                    label="Les elements visibles dans le panier reflètent ce qu&apos;on va acheter "
+                    additionalInfo="" weight="2" session="s1"/>
+            </criteria>
+            <scenario id="e1"/>
+            <taskModel id="t1"/>
+            <argument id="g1"/>
+            <argument id="g2"/>
+            <factor id="f1">
+                <itemFactor label="Coherence du panier" weight="3" session="s1"/>
+            </factor>
+            <factor id="f2">
+                <itemFactor label="Reprise sur erreur" weight="2" session="s1"/>
+            </factor>
+            <factor id="f3">
+                <itemFactor label="Rapidité de verificatio du panier"
+                    weight="1" session="s1"/>
+            </factor>
+        </node>
+        <position id="p1" idref="q1">
+            <itemPosition posX="171" posY="300" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p2" idref="o1">
+            <itemPosition posX="420" posY="149" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p3" idref="o2">
+            <itemPosition posX="424" posY="447" width="90" height="90"
+                session="s1" selected="true"/>
+        </position>
+        <position id="p4" idref="c1">
+            <itemPosition posX="799" posY="268" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p5" idref="c2">
+            <itemPosition posX="799" posY="440" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p6" idref="g1"/>
+        <position id="p7" idref="g2"/>
+        <position id="p8" idref="f1">
+            <itemPosition posX="1129" posY="54" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p9" idref="f2">
+            <itemPosition posX="1128" posY="438" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p10" idref="t1"/>
+        <position id="p11" idref="e1"/>
+        <position id="p12" idref="f3">
+            <itemPosition posX="1132" posY="268" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p13" idref="c3">
+            <itemPosition posX="792" posY="55" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+    </nodes>
+    <links>
+        <link id="l1">
+            <itemLink from="p2" to="p4" value="5" session="s1">
+                <blackBox posX="654" posY="253" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l2"/>
+        <link id="l3">
+            <itemLink from="p1" to="p2" value="0" session="s1"/>
+        </link>
+        <link id="l4">
+            <itemLink from="p1" to="p3" value="0" session="s1"/>
+        </link>
+        <link id="l5">
+            <itemLink from="p2" to="p5" value="1" session="s1">
+                <blackBox posX="654" posY="339" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l6">
+            <itemLink from="p3" to="p4" value="5" session="s1">
+                <blackBox posX="656" posY="402" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l7">
+            <itemLink from="p3" to="p5" value="5" session="s1">
+                <blackBox posX="656" posY="488" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l8">
+            <itemLink from="p2" to="p13" value="5" session="s1">
+                <blackBox posX="651" posY="147" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l9">
+            <itemLink from="p3" to="p13" value="3" session="s1">
+                <blackBox posX="653" posY="296" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l10">
+            <itemLink from="p5" to="p9" value="3" session="s1">
+                <blackBox posX="1008" posY="484" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l11">
+            <itemLink from="p4" to="p12" value="3" session="s1">
+                <blackBox posX="1010" posY="313" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l12">
+            <itemLink from="p13" to="p8" value="3" session="s1">
+                <blackBox posX="990" posY="99" width="5" height="5"/>
+            </itemLink>
+        </link>
+    </links>
+    <authors>
+        <author id="a1" name="vincent"/>
+    </authors>
+</diagram>
