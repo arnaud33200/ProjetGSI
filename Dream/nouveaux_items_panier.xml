@@ -33,6 +33,11 @@
                     label="Possibilite de choisir ou placer un element"
                     weight="3" session="s1"/>
             </criteria>
+            <criteria id="c4">
+                <itemCriteria
+                    label="Temps pour notifier qu&apos;un nouvel element a été ajouté par quelqu&apos;un d&apos;autre dans le panier"
+                    weight="3" session="s1"/>
+            </criteria>
             <factor id="f1"/>
             <factor id="f2">
                 <itemFactor label="Facilité de reperage dans le panier"
@@ -41,6 +46,10 @@
             <factor id="f3">
                 <itemFactor
                     label="Rapidité pour retrouver le dernier produit ajouté"
+                    weight="3" session="s1"/>
+            </factor>
+            <factor id="f4">
+                <itemFactor label="Faciliter les courses collaboratives"
                     weight="3" session="s1"/>
             </factor>
         </node>
@@ -76,6 +85,14 @@
         </position>
         <position id="p10" idref="f3">
             <itemPosition posX="974" posY="381" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p11" idref="f4">
+            <itemPosition posX="967" posY="533" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p12" idref="c4">
+            <itemPosition posX="692" posY="531" width="90" height="90"
                 session="s1" selected="false"/>
         </position>
     </nodes>
@@ -127,6 +144,26 @@
         <link id="l11">
             <itemLink from="p6" to="p10" value="3" session="s1">
                 <blackBox posX="876" posY="431" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l12">
+            <itemLink from="p4" to="p12" value="5" session="s1">
+                <blackBox posX="591" posY="574" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l13">
+            <itemLink from="p3" to="p12" value="3" session="s1">
+                <blackBox posX="589" posY="460" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l14">
+            <itemLink from="p2" to="p12" value="3" session="s1">
+                <blackBox posX="588" posY="353" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l15">
+            <itemLink from="p12" to="p11" value="3" session="s1">
+                <blackBox posX="867" posY="577" width="5" height="5"/>
             </itemLink>
         </link>
     </links>
