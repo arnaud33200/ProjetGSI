@@ -2,8 +2,11 @@
 
     Private WithEvents u1 As Utilisateur
     Private WithEvents u2 As Utilisateur
+    Private produitNum As Integer
 
     Private Sub MoteurCoop_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+        produitNum = 10
 
         u1 = New Utilisateur
         u1.setTitre("Utilisateur 1")
@@ -24,13 +27,15 @@
 
 
     Public Sub demandeAjoutU1() Handles u1.demandeAjout
-        u1.nouveauAjout("u1", 666)
-        u2.nouveauAjout("u1", 666)
+        produitNum = produitNum + 1
+        u1.nouveauAjout("u1", produitNum)
+        u2.nouveauAjout("u1", produitNum)
     End Sub
 
     Public Sub demandeAjoutU2() Handles u2.demandeAjout
-        u1.nouveauAjout("u2", 667)
-        u2.nouveauAjout("u2", 667)
+        produitNum = produitNum + 1
+        u1.nouveauAjout("u2", produitNum)
+        u2.nouveauAjout("u2", produitNum)
     End Sub
 
     Public Sub demandeSuppressionU1(ByVal n As Integer) Handles u1.demandeSuppression
