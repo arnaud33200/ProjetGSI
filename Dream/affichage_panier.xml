@@ -29,12 +29,13 @@
             <criteria id="c2"/>
             <criteria id="c3">
                 <itemCriteria
-                    label="Temps pour augmenter la quantité d&apos;un produit"
-                    weight="1" session="s1"/>
+                    label="Clics pour augmenter la quantité d&apos;un produit"
+                    additionalInfo="" weight="1" session="s1"/>
             </criteria>
             <criteria id="c4">
-                <itemCriteria label="Temps pour supprimer un produit"
-                    weight="1" session="s1"/>
+                <itemCriteria
+                    label="clics pour diminuer la quantité d&apos;un produit"
+                    additionalInfo="" weight="1" session="s1"/>
             </criteria>
             <criteria id="c5">
                 <itemCriteria
@@ -46,6 +47,40 @@
                 <itemCriteria label="Espace visualisation des produits"
                     weight="1" session="s1"/>
             </criteria>
+            <argument id="g1">
+                <itemArgument
+                    label="Espace de visualisation reduit en permanence" session="s1"/>
+            </argument>
+            <argument id="g2">
+                <itemArgument
+                    label="Toujours réalisable en un seul clic" session="s1"/>
+            </argument>
+            <argument id="g3"/>
+            <argument id="g4">
+                <itemArgument
+                    label="Aucune action n&apos;est necessaire pour visualiser le contenu du panier" session="s1"/>
+            </argument>
+            <argument id="g5">
+                <itemArgument
+                    label="Espace de visualisation maximal en permanence" session="s1"/>
+            </argument>
+            <argument id="g6">
+                <itemArgument
+                    label="Nécessité de passer sur la page de verification du panier " session="s1"/>
+            </argument>
+            <argument id="g7"/>
+            <argument id="g8">
+                <itemArgument
+                    label="Un seul clic si la panier est déjà affiché sinon deux clic maximum" session="s1"/>
+            </argument>
+            <argument id="g9">
+                <itemArgument
+                    label="Aucune action necessaire si le panier est déjà affiché sinon un seul clic requis" session="s1"/>
+            </argument>
+            <argument id="g10">
+                <itemArgument
+                    label="Espace maximum quand l&apos;utilisateur en a le plus besoin" session="s1"/>
+            </argument>
             <factor id="f1"/>
             <factor id="f2"/>
             <factor id="f3">
@@ -119,6 +154,40 @@
         </position>
         <position id="p20" idref="f6">
             <itemPosition posX="1160" posY="359" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p21" idref="g1">
+            <itemPosition posX="489" posY="0" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p22" idref="g2">
+            <itemPosition posX="634" posY="1" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p23" idref="g3"/>
+        <position id="p24" idref="g4">
+            <itemPosition posX="399" posY="12" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p25" idref="g5">
+            <itemPosition posX="245" posY="237" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p26" idref="g6">
+            <itemPosition posX="288" posY="487" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p27" idref="g7"/>
+        <position id="p28" idref="g8">
+            <itemPosition posX="575" posY="802" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p29" idref="g9">
+            <itemPosition posX="692" posY="742" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p30" idref="g10">
+            <itemPosition posX="398" posY="773" width="90" height="90"
                 session="s1" selected="false"/>
         </position>
     </nodes>
@@ -209,7 +278,7 @@
         </link>
         <link id="l23"/>
         <link id="l24">
-            <itemLink from="p11" to="p19" value="3" session="s1">
+            <itemLink from="p11" to="p19" value="4" session="s1">
                 <blackBox posX="580" posY="463" width="5" height="5"/>
             </itemLink>
         </link>
@@ -238,6 +307,45 @@
         <link id="l31"/>
         <link id="l32">
             <itemLink from="p12" to="p14" value="6" session="s1"/>
+        </link>
+        <link id="l33">
+            <itemLink from="l6" to="p21" value="7" session="s1"/>
+        </link>
+        <link id="l34">
+            <itemLink from="l7" to="p22" value="7" session="s1"/>
+        </link>
+        <link id="l35"/>
+        <link id="l36">
+            <itemLink from="l9" to="p24" value="7" session="s1"/>
+        </link>
+        <link id="l37">
+            <itemLink from="l11" to="p25" value="7" session="s1"/>
+        </link>
+        <link id="l38">
+            <itemLink from="l12" to="p26" value="7" session="s1"/>
+        </link>
+        <link id="l39"/>
+        <link id="l40">
+            <itemLink from="l13" to="p26" value="7" session="s1"/>
+        </link>
+        <link id="l41">
+            <itemLink from="l14" to="p26" value="7" session="s1"/>
+        </link>
+        <link id="l42"/>
+        <link id="l43">
+            <itemLink from="l8" to="p22" value="7" session="s1"/>
+        </link>
+        <link id="l44">
+            <itemLink from="l25" to="p28" value="7" session="s1"/>
+        </link>
+        <link id="l45">
+            <itemLink from="l26" to="p28" value="7" session="s1"/>
+        </link>
+        <link id="l46">
+            <itemLink from="l28" to="p29" value="7" session="s1"/>
+        </link>
+        <link id="l47">
+            <itemLink from="l24" to="p30" value="7" session="s1"/>
         </link>
     </links>
     <authors>

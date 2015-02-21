@@ -20,7 +20,8 @@
                 <itemOption label="en bas de la liste" session="s1"/>
             </option>
             <option id="o3">
-                <itemOption label="sur le position courante du scroll" session="s1"/>
+                <itemOption label="sur la position courante du scroll"
+                    additionalInfo="" session="s1"/>
             </option>
             <criteria id="c1"/>
             <criteria id="c2">
@@ -36,8 +37,20 @@
             <criteria id="c4">
                 <itemCriteria
                     label="Temps pour notifier qu&apos;un nouvel element a été ajouté par quelqu&apos;un d&apos;autre dans le panier"
-                    weight="3" session="s1"/>
+                    weight="2" session="s1"/>
             </criteria>
+            <argument id="g1">
+                <itemArgument
+                    label="Apparition d&apos;un produit ajouté par quelqu&apos;un d&apos;autre directement la ou l&apos;on est suceptible de regarder" session="s1"/>
+            </argument>
+            <argument id="g2">
+                <itemArgument
+                    label="Optimal pour retrouver le dernier élément juste après l&apos;avoir ajouté. Si on ajoute et qu&apos;on change la position du scroll, l&apos;élément sera difficile à retrouver" session="s1"/>
+            </argument>
+            <argument id="g3">
+                <itemArgument
+                    label="L&apos;ajout d&apos;un element par quelqu&apos;un d&apos;autre peut passer inapercu dans un panier contenant beaucoup d&apos;éléments" session="s1"/>
+            </argument>
             <factor id="f1"/>
             <factor id="f2">
                 <itemFactor label="Facilité de reperage dans le panier"
@@ -50,7 +63,7 @@
             </factor>
             <factor id="f4">
                 <itemFactor label="Faciliter les courses collaboratives"
-                    weight="3" session="s1"/>
+                    weight="2" session="s1"/>
             </factor>
         </node>
         <position id="p1" idref="q1">
@@ -95,6 +108,18 @@
             <itemPosition posX="692" posY="531" width="90" height="90"
                 session="s1" selected="false"/>
         </position>
+        <position id="p13" idref="g1">
+            <itemPosition posX="528" posY="712" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p14" idref="g2">
+            <itemPosition posX="664" posY="656" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p15" idref="g3">
+            <itemPosition posX="621" posY="54" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
     </nodes>
     <links>
         <link id="l1">
@@ -112,7 +137,7 @@
             </itemLink>
         </link>
         <link id="l5">
-            <itemLink from="p2" to="p6" value="4" session="s1">
+            <itemLink from="p2" to="p6" value="5" session="s1">
                 <blackBox posX="586" posY="283" width="5" height="5"/>
             </itemLink>
         </link>
@@ -122,12 +147,12 @@
             </itemLink>
         </link>
         <link id="l7">
-            <itemLink from="p3" to="p6" value="4" session="s1">
+            <itemLink from="p3" to="p6" value="5" session="s1">
                 <blackBox posX="587" posY="390" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l8">
-            <itemLink from="p4" to="p6" value="5" session="s1">
+            <itemLink from="p4" to="p6" value="4" session="s1">
                 <blackBox posX="589" posY="504" width="5" height="5"/>
             </itemLink>
         </link>
@@ -165,6 +190,18 @@
             <itemLink from="p12" to="p11" value="3" session="s1">
                 <blackBox posX="867" posY="577" width="5" height="5"/>
             </itemLink>
+        </link>
+        <link id="l16">
+            <itemLink from="l12" to="p13" value="7" session="s1"/>
+        </link>
+        <link id="l17">
+            <itemLink from="l8" to="p14" value="7" session="s1"/>
+        </link>
+        <link id="l18">
+            <itemLink from="l13" to="p15" value="7" session="s1"/>
+        </link>
+        <link id="l19">
+            <itemLink from="l14" to="p15" value="7" session="s1"/>
         </link>
     </links>
     <authors>

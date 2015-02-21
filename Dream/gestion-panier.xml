@@ -20,7 +20,9 @@
                     label="Quelle interaction pour incrémenter le nombre de produits?" session="s1"/>
             </question>
             <question id="q4">
-                <itemQuestion label="Quelle type de bouton" session="s1"/>
+                <itemQuestion
+                    label="Quelle type de bouton pour supprimer un produit en quantité multiple"
+                    additionalInfo="" seeheim="Not selected" session="s1"/>
             </question>
             <option id="o1"/>
             <option id="o2"/>
@@ -73,12 +75,13 @@
             </criteria>
             <criteria id="c7">
                 <itemCriteria
-                    label="Utilisation uniquement de la sourie"
-                    weight="3" session="s1"/>
+                    label="Utilisation uniquement de la souris"
+                    additionalInfo="" weight="3" session="s1"/>
             </criteria>
             <criteria id="c8">
-                <itemCriteria label="Correspondance avec situation réel"
-                    weight="3" session="s1"/>
+                <itemCriteria
+                    label="Correspondance avec situation réele"
+                    additionalInfo="" weight="3" session="s1"/>
             </criteria>
             <criteria id="c9">
                 <itemCriteria label="temps minimum de compréhension"
@@ -96,6 +99,30 @@
             <argument id="g1">
                 <itemArgument
                     label="Beaucoup de clicks si il y a beacoup de quantité " session="s1"/>
+            </argument>
+            <argument id="g2">
+                <itemArgument
+                    label="Un seul clic quelque soit la quantité du produit" session="s1"/>
+            </argument>
+            <argument id="g3">
+                <itemArgument
+                    label="En situation réelle en magasin, nécessité de reposer les produits un à un en rayon" session="s1"/>
+            </argument>
+            <argument id="g4">
+                <itemArgument
+                    label="Quand on ajoute plusieurs exemplaires du même produit dans son panier physique, on augmente le nombre d&apos;exemplaire" session="s1"/>
+            </argument>
+            <argument id="g5">
+                <itemArgument
+                    label="Temps constant quelque soit la quantité du produit" session="s1"/>
+            </argument>
+            <argument id="g6">
+                <itemArgument
+                    label="Plus la quantité du produit est élevée plus le temps est long" session="s1"/>
+            </argument>
+            <argument id="g7">
+                <itemArgument
+                    label="Etat de l&apos;existant - Leclerc Drive" session="s1"/>
             </argument>
             <factor id="f1">
                 <itemFactor label="Actions rapides" weight="3" session="s1"/>
@@ -125,7 +152,7 @@
         <position id="p5" idref="o3"/>
         <position id="p6" idref="o4">
             <itemPosition posX="431" posY="302" width="90" height="90"
-                session="s1" selected="false"/>
+                session="s1" selected="true"/>
         </position>
         <position id="p7" idref="c1">
             <itemPosition posX="730" posY="167" width="90" height="90"
@@ -136,8 +163,8 @@
                 session="s1" selected="false"/>
         </position>
         <position id="p9" idref="o5">
-            <itemPosition posX="439" posY="155" width="90" height="90"
-                session="s1" selected="false"/>
+            <itemPosition posX="409" posY="170" width="90" height="90"
+                session="s1" selected="true"/>
         </position>
         <position id="p10" idref="g1">
             <itemPosition posX="584" posY="52" width="90" height="90"
@@ -151,7 +178,7 @@
         <position id="p13" idref="e1"/>
         <position id="p14" idref="c2"/>
         <position id="p15" idref="q3">
-            <itemPosition posX="309" posY="561" width="90" height="90"
+            <itemPosition posX="174" posY="576" width="90" height="90"
                 session="s1" selected="false"/>
         </position>
         <position id="p16" idref="q4">
@@ -159,15 +186,15 @@
                 session="s1" selected="false"/>
         </position>
         <position id="p17" idref="o6">
-            <itemPosition posX="481" posY="456" width="90" height="90"
-                session="s1" selected="false"/>
+            <itemPosition posX="391" posY="456" width="90" height="90"
+                session="s1" selected="true"/>
         </position>
         <position id="p18" idref="o7">
-            <itemPosition posX="478" posY="665" width="90" height="90"
+            <itemPosition posX="313" posY="755" width="90" height="90"
                 session="s1" selected="false"/>
         </position>
         <position id="p19" idref="o8">
-            <itemPosition posX="474" posY="558" width="90" height="90"
+            <itemPosition posX="324" posY="603" width="90" height="90"
                 session="s1" selected="false"/>
         </position>
         <position id="p20" idref="f3"/>
@@ -203,7 +230,7 @@
         </position>
         <position id="p30" idref="o11">
             <itemPosition posX="489" posY="1029" width="90" height="90"
-                session="s1" selected="false"/>
+                session="s1" selected="true"/>
         </position>
         <position id="p31" idref="o12">
             <itemPosition posX="482" posY="1128" width="90" height="90"
@@ -225,6 +252,30 @@
         <position id="p36" idref="c12"/>
         <position id="p37" idref="f6">
             <itemPosition posX="1099" posY="553" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p38" idref="g2">
+            <itemPosition posX="434" posY="38" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p39" idref="g3">
+            <itemPosition posX="742" posY="45" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p40" idref="g4">
+            <itemPosition posX="634" posY="342" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p41" idref="g5">
+            <itemPosition posX="287" posY="869" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p42" idref="g6">
+            <itemPosition posX="237" posY="413" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p43" idref="g7">
+            <itemPosition posX="680" posY="1147" width="90" height="90"
                 session="s1" selected="false"/>
         </position>
     </nodes>
@@ -269,12 +320,12 @@
         <link id="l12"/>
         <link id="l13">
             <itemLink from="p17" to="p23" value="3" session="s1">
-                <blackBox posX="643" posY="504" width="5" height="5"/>
+                <blackBox posX="613" posY="474" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l14">
             <itemLink from="p19" to="p23" value="2" session="s1">
-                <blackBox posX="647" posY="555" width="5" height="5"/>
+                <blackBox posX="482" posY="585" width="5" height="5"/>
                 <breakPoint link="left">
                     <breakPointItem xPoint="534.0" yPoint="603.0"/>
                     <breakPointItem xPoint="695.0999984741211" yPoint="562.0"/>
@@ -283,61 +334,61 @@
         </link>
         <link id="l15">
             <itemLink from="p18" to="p23" value="3" session="s1">
-                <blackBox posX="634" posY="601" width="5" height="5"/>
+                <blackBox posX="589" posY="616" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l16">
             <itemLink from="p18" to="p25" value="3" session="s1">
-                <blackBox posX="635" posY="732" width="5" height="5"/>
+                <blackBox posX="605" posY="822" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l17">
-            <itemLink from="p19" to="p25" value="3" session="s1">
-                <blackBox posX="648" posY="686" width="5" height="5"/>
+            <itemLink from="p19" to="p25" value="4" session="s1">
+                <blackBox posX="573" posY="716" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l18">
-            <itemLink from="p17" to="p26" value="3" session="s1">
-                <blackBox posX="640" posY="551" width="5" height="5"/>
+            <itemLink from="p17" to="p26" value="4" session="s1">
+                <blackBox posX="580" posY="521" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l19">
-            <itemLink from="p18" to="p26" value="3" session="s1">
+            <itemLink from="p18" to="p26" value="4" session="s1">
                 <blackBox posX="638" posY="656" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l20">
             <itemLink from="p19" to="p26" value="1" session="s1">
-                <blackBox posX="636" posY="602" width="5" height="5"/>
+                <blackBox posX="486" posY="617" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l21">
             <itemLink from="p18" to="p24" value="2" session="s1">
-                <blackBox posX="640" posY="704" width="5" height="5"/>
+                <blackBox posX="580" posY="764" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l22">
             <itemLink from="p19" to="p24" value="4" session="s1">
-                <blackBox posX="638" posY="650" width="5" height="5"/>
+                <blackBox posX="488" posY="665" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l23">
             <itemLink from="p17" to="p24" value="4" session="s1">
-                <blackBox posX="642" posY="599" width="5" height="5"/>
+                <blackBox posX="567" posY="584" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l24">
             <itemLink from="p17" to="p25" value="4" session="s1">
-                <blackBox posX="644" posY="665" width="5" height="5"/>
+                <blackBox posX="554" posY="635" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l25">
-            <itemLink from="p9" to="p27" value="3" session="s1">
+            <itemLink from="p9" to="p27" value="5" session="s1">
                 <blackBox posX="630" posY="256" width="5" height="5"/>
             </itemLink>
         </link>
         <link id="l26">
-            <itemLink from="p6" to="p27" value="4" session="s1">
+            <itemLink from="p6" to="p27" value="2" session="s1">
                 <blackBox posX="626" posY="330" width="5" height="5"/>
             </itemLink>
         </link>
@@ -366,7 +417,7 @@
             </itemLink>
         </link>
         <link id="l31">
-            <itemLink from="p30" to="p34" value="4" session="s1">
+            <itemLink from="p30" to="p34" value="5" session="s1">
                 <blackBox posX="715" posY="1090" width="5" height="5"/>
                 <breakPoint link="left">
                     <breakPointItem xPoint="534.0" yPoint="1074.0"/>
@@ -426,6 +477,36 @@
         <link id="l45">
             <itemLink from="p25" to="p8" value="3" session="s1">
                 <blackBox posX="917" posY="503" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l46">
+            <itemLink from="l7" to="p38" value="7" session="s1"/>
+        </link>
+        <link id="l47">
+            <itemLink from="l25" to="p39" value="7" session="s1"/>
+        </link>
+        <link id="l48">
+            <itemLink from="l26" to="p39" value="7" session="s1"/>
+        </link>
+        <link id="l49"/>
+        <link id="l50">
+            <itemLink from="l17" to="p41" value="7" session="s1"/>
+        </link>
+        <link id="l51">
+            <itemLink from="l23" to="p40" value="7" session="s1"/>
+        </link>
+        <link id="l52">
+            <itemLink from="l24" to="p42" value="7" session="s1"/>
+        </link>
+        <link id="l53">
+            <itemLink from="l16" to="p42" value="7" session="s1"/>
+        </link>
+        <link id="l54">
+            <itemLink from="l28" to="p43" value="7" session="s1">
+                <breakPoint link="full">
+                    <breakPointItem xPoint="710.5" yPoint="994.5"/>
+                    <breakPointItem xPoint="725.0" yPoint="1192.0"/>
+                </breakPoint>
             </itemLink>
         </link>
     </links>

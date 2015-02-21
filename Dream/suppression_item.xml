@@ -20,8 +20,8 @@
                 <itemOption label="Deux etapes" session="s1"/>
             </option>
             <criteria id="c1">
-                <itemCriteria label="Temps pour supprimer un item"
-                    weight="1" session="s1"/>
+                <itemCriteria label="clics pour supprimer un item"
+                    additionalInfo="" weight="1" session="s1"/>
             </criteria>
             <criteria id="c2">
                 <itemCriteria
@@ -34,9 +34,26 @@
                     additionalInfo="" weight="2" session="s1"/>
             </criteria>
             <scenario id="e1"/>
+            <scenario id="e2"/>
             <taskModel id="t1"/>
             <argument id="g1"/>
             <argument id="g2"/>
+            <argument id="g3">
+                <itemArgument
+                    label="Un item supprimé reste visible en grisé dans le panier" session="s1"/>
+            </argument>
+            <argument id="g4">
+                <itemArgument
+                    label="Necessité de revenir à l&apos;étape de &quot;faire les courses&quot; et de chercher le produit" session="s1"/>
+            </argument>
+            <argument id="g5">
+                <itemArgument
+                    label="Un seul clic sur la corbeille ou le bouton -" session="s1"/>
+            </argument>
+            <argument id="g6">
+                <itemArgument
+                    label="Un item supprimé n&apos;apparait plus dans le panier" session="s1"/>
+            </argument>
             <factor id="f1">
                 <itemFactor label="Coherence du panier" weight="3" session="s1"/>
             </factor>
@@ -86,6 +103,23 @@
         </position>
         <position id="p13" idref="c3">
             <itemPosition posX="792" posY="55" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p14" idref="g3">
+            <itemPosition posX="654" posY="581" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p15" idref="g4">
+            <itemPosition posX="489" posY="17" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p16" idref="g5">
+            <itemPosition posX="663" posY="12" width="90" height="90"
+                session="s1" selected="false"/>
+        </position>
+        <position id="p17" idref="e2"/>
+        <position id="p18" idref="g6">
+            <itemPosition posX="418" posY="301" width="90" height="90"
                 session="s1" selected="false"/>
         </position>
     </nodes>
@@ -141,6 +175,24 @@
             <itemLink from="p13" to="p8" value="3" session="s1">
                 <blackBox posX="990" posY="99" width="5" height="5"/>
             </itemLink>
+        </link>
+        <link id="l13">
+            <itemLink from="l5" to="p15" value="7" session="s1"/>
+        </link>
+        <link id="l14">
+            <itemLink from="l1" to="p16" value="7" session="s1"/>
+        </link>
+        <link id="l15">
+            <itemLink from="l6" to="p16" value="7" session="s1"/>
+        </link>
+        <link id="l16">
+            <itemLink from="l7" to="p14" value="7" session="s1"/>
+        </link>
+        <link id="l17">
+            <itemLink from="l9" to="p14" value="7" session="s1"/>
+        </link>
+        <link id="l18">
+            <itemLink from="l8" to="p18" value="7" session="s1"/>
         </link>
     </links>
     <authors>
