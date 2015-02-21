@@ -38,6 +38,7 @@
                         <task copy="false" critical="0" folded="false" help="" id="18" iterative="false" maxexectime="0" minexectime="0" name="Valider payement" nb_iteration="0" optional="false" type="abstract" x="1246" y="367"/>
                     </operator>
                 </task>
+                <task copy="false" critical="0" folded="false" help="" id="23" iterative="false" maxexectime="0" minexectime="0" name="Retirer ses courses en magasin" nb_iteration="0" optional="false" type="abstract" x="1218" y="197"/>
             </operator>
         </task>
     </nodes>
