@@ -1,0 +1,10 @@
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\bin\Debug\CoopPanier.exe
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\bin\Debug\CoopPanier.pdb
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\bin\Debug\CoopPanier.xml
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\obj\x86\Debug\CoopPanier.MoteurCoop.resources
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\obj\x86\Debug\CoopPanier.Resources.resources
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\obj\x86\Debug\CoopPanier.Utilisateur.resources
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\obj\x86\Debug\CoopPanier.vbproj.GenerateResource.Cache
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\obj\x86\Debug\CoopPanier.exe
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\obj\x86\Debug\CoopPanier.xml
+C:\Users\arnaud\AppData\Local\Temporary Projects\CoopPanier\obj\x86\Debug\CoopPanier.pdb
