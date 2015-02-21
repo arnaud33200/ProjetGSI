@@ -42,6 +42,7 @@
                 </task>
                 <task copy="false" critical="0" folded="false" help="" id="26" iterative="false" maxexectime="0" minexectime="0" name="Remplir le panier" nb_iteration="0" optional="false" subtree="Remplir le panier" type="subroutine" x="213" y="302"/>
                 <task copy="false" critical="0" folded="false" help="" id="27" iterative="false" maxexectime="0" minexectime="0" name="Verifier le panier" nb_iteration="0" optional="false" subtree="Verifier le panier" type="subroutine" x="435" y="312"/>
+                <task copy="false" critical="0" folded="false" help="" id="35" iterative="false" maxexectime="0" minexectime="0" name="Retirer ses courses en magasin" nb_iteration="0" optional="false" type="abstract" x="967" y="302"/>
             </operator>
         </task>
         <task copy="false" critical="0" folded="false" help="" id="29" iterative="false" maxexectime="0" minexectime="0" name="Choix du magasin" nb_iteration="0" optional="false" type="cognitive_decision" x="98" y="677"/>
