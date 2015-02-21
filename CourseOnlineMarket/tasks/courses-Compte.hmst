@@ -33,12 +33,16 @@
                 <task copy="false" critical="0" folded="false" help="" id="19" iterative="false" maxexectime="0" minexectime="0" name="payer le panier" nb_iteration="0" optional="false" type="abstract" x="998" y="197">
                     <operator id="-1" type="enable" x="1049" y="294">
                         <task copy="false" critical="0" folded="false" help="" id="20" iterative="false" maxexectime="0" minexectime="0" name="Valider panier" nb_iteration="0" optional="false" type="abstract" x="780" y="367"/>
-                        <task copy="false" critical="0" folded="false" help="" id="22" iterative="false" maxexectime="0" minexectime="0" name="Choisir date retrait" nb_iteration="0" optional="false" type="abstract" x="916" y="367"/>
-                        <task copy="false" critical="0" folded="false" help="" id="21" iterative="false" maxexectime="0" minexectime="0" name="Choisir moyen payement" nb_iteration="0" optional="false" type="abstract" x="1063" y="367"/>
-                        <task copy="false" critical="0" folded="false" help="" id="18" iterative="false" maxexectime="0" minexectime="0" name="Valider payement" nb_iteration="0" optional="false" type="abstract" x="1246" y="367"/>
+                        <task copy="false" critical="0" folded="false" help="" id="21" iterative="false" maxexectime="0" minexectime="0" name="Choisir moyen payement" nb_iteration="0" optional="false" type="abstract" x="936" y="367"/>
+                        <task copy="false" critical="0" folded="false" help="" id="18" iterative="false" maxexectime="0" minexectime="0" name="Valider payement" nb_iteration="0" optional="false" type="abstract" x="1129" y="371"/>
                     </operator>
                 </task>
-                <task copy="false" critical="0" folded="false" help="" id="23" iterative="false" maxexectime="0" minexectime="0" name="Retirer ses courses en magasin" nb_iteration="0" optional="false" type="abstract" x="1218" y="197"/>
+                <task copy="false" critical="0" folded="false" help="" id="23" iterative="false" maxexectime="0" minexectime="0" name="Retirer ses courses en magasin" nb_iteration="0" optional="false" type="abstract" x="1270" y="182">
+                    <operator id="-1" type="enable" x="1347" y="263">
+                        <task copy="false" critical="0" folded="false" help="" id="24" iterative="false" maxexectime="0" minexectime="0" name="choisir date du retrait" nb_iteration="0" optional="false" type="abstract" x="1186" y="294"/>
+                        <task copy="false" critical="0" folded="false" help="" id="25" iterative="false" maxexectime="0" minexectime="0" name="choisir heure du retrait" nb_iteration="0" optional="false" type="abstract" x="1409" y="294"/>
+                    </operator>
+                </task>
             </operator>
         </task>
     </nodes>
