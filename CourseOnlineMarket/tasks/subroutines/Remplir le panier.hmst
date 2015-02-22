@@ -8,7 +8,7 @@
                     <operator id="-1" type="choice" x="115" y="301">
                         <task copy="false" critical="0" folded="false" help="" id="13" iterative="true" maxexectime="0" minexectime="0" name="ouvrir un rayon" nb_iteration="0" optional="false" type="abstract" x="56" y="361"/>
                         <task copy="false" critical="0" folded="false" help="" id="14" iterative="false" maxexectime="0" minexectime="0" name="Faire une recherche" nb_iteration="0" optional="false" type="abstract" x="192" y="361"/>
-                        <task copy="false" critical="0" folded="false" help="" id="15" iterative="false" maxexectime="0" minexectime="0" name="Page promotion" nb_iteration="0" optional="false" type="abstract" x="-91" y="361"/>
+                        <task copy="false" critical="0" folded="false" help="" id="15" iterative="false" maxexectime="0" minexectime="0" name="Page promotion" nb_iteration="0" optional="false" type="abstract" x="-80" y="361"/>
                     </operator>
                 </task>
                 <task copy="false" critical="0" folded="false" help="" id="11" iterative="false" maxexectime="0" minexectime="0" name="filtrer" nb_iteration="0" optional="true" type="abstract" x="236" y="220"/>
