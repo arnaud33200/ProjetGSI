@@ -18,3 +18,13 @@ C:\cygwin64\home\arnaud\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier
 C:\cygwin64\home\arnaud\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.Resources.resources
 C:\cygwin64\home\arnaud\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.Utilisateur.resources
 C:\cygwin64\home\arnaud\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.vbproj.GenerateResource.Cache
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.exe
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.xml
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.pdb
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\bin\Debug\CoopPanier.exe
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\bin\Debug\CoopPanier.pdb
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\bin\Debug\CoopPanier.xml
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.MoteurCoop.resources
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.Resources.resources
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.Utilisateur.resources
+C:\Users\Vincent\Documents\GitRepository\ProjetGSI\CoopPanier\CoopPanier\obj\x86\Debug\CoopPanier.vbproj.GenerateResource.Cache
